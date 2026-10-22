@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e7">
+  <title>a little something for abdullah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="topbar">
+      <span>✳ a tiny corner of the internet</span>
+      <span class="top-right">made just for you</span>
+    </header>
+
+    <section class="hero">
+      <div class="hero-decoration">✦ &nbsp; ✳ &nbsp; ✦</div>
+      <p class="eyebrow">SPECIAL DELIVERY FOR ONE (1) ABDULLAH</p>
+      <h1>hey, abdullah<span class="period">.</span></h1>
+      <p class="hero-copy">
+        i know your brain has approximately 47 tabs open right now.
+        so i made you a tiny place where nothing is due,
+        nobody is grading you, and you can just exist.
+      </p>
+      <div class="hero-stamp">✿ YOU ARE DOING ENOUGH ✿</div>
+    </section>
+
+    <section class="room-section" aria-label="Interactive cozy room">
+      <div class="section-label">
+        <span>01 / your little resting spot</span>
+        <span>click around ↓</span>
+      </div>
+
+      <div class="room" id="room">
+        <div class="room-stars" aria-hidden="true">
+          <span>✦</span><span>·</span><span>✧</span><span>✦</span>
+        </div>
+
+        <div class="window" aria-hidden="true">
+          <div class="moon"></div>
+          <div class="window-cross-v"></div>
+          <div class="window-cross-h"></div>
+        </div>
+
+        <div class="poster">it's okay<br>to rest ♡</div>
+
+        <button class="lamp" id="lamp" aria-label="Toggle lamp">
+          <span class="lamp-glow"></span>
+          <span class="lamp-shade"></span>
+          <span class="lamp-stem"></span>
+          <span class="lamp-base"></span>
+        </button>
+
+        <div class="shelf" aria-hidden="true">
+          <div class="book b1"></div>
+          <div class="book b2"></div>
+          <div class="book b3"></div>
+          <div class="plant">✿</div>
+        </div>
+
+        <div class="desk">
+          <button class="mug" id="mug" aria-label="Click the tea mug">
+            <span class="steam">〰</span>
+            <span class="mug-cup">☕</span>
+          </button>
+          <div class="notebook">
+            <span>one thing<br>at a time</span>
+          </div>
+        </div>
+
+        <button class="cat" id="cat" aria-label="Pet the cat">
+          <span class="cat-ears">▲ &nbsp; ▲</span>
+          <span class="cat-face">= ◡ =</span>
+          <span class="cat-body"></span>
+          <span class="cat-tail">~</span>
+        </button>
+
+        <div class="floor-line"></div>
+        <div class="room-toast" id="roomToast" role="status"></div>
+      </div>
+
+      <p class="room-hint">psst... try the lamp, the tea, and the cat.</p>
+    </section>
+
+    <section class="letter-section">
+      <div class="section-label">
+        <span>02 / you've got mail</span>
+        <span>♡</span>
+      </div>
+
+      <div class="letter-card">
+        <div class="envelope" id="envelope" role="button"
+             tabindex="0" aria-expanded="false"
+             aria-label="Open your letter">
+          <div class="envelope-back"></div>
+          <div class="envelope-paper">for abdullah ♡</div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-seal">♥</div>
+        </div>
+
+        <p class="letter-prompt" id="letterPrompt">
+          a little something for you. click to open.
+        </p>
+
+        <div class="letter-content" id="letterContent" hidden>
+          <p>dear abdullah,</p>
+
+          <p>
+            i know exams and other stuff have been taking up so much space in your
+            head lately. i wish i could make all the stress disappear,
+            but since i can't, i made you this instead.
+          </p>
+
+          <p>
+            i hope you know that you are so much more than the grades
+            you get or the things you manage to finish in a day.
+            you're allowed to be tired. you're allowed to take breaks.
+            you don't have to earn rest.
+          </p>
+
+          <p>
+            i'm really proud of you, and i'm always rooting for you.
+            even on the days when you're not rooting for yourself.
+          </p>
+
+          <p>
+            now drink some water, unclench your jaw,
+            and please be a little nicer to yourself!
+          </p>
+
+          <p class="signature">yours sincerely,<br>ayesha</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="kindness-section">
+      <div class="section-label">
+        <span>03 / emergency kindness dispenser</span>
+        <span>∞ refills</span>
+      </div>
+
+      <div class="kindness-card">
+        <div class="kindness-symbol">✳</div>
+        <p class="kindness-heading">for when your brain is being mean</p>
+        <div class="kindness-message" id="kindnessMessage"
+             aria-live="polite">
+          you are a person, not a productivity machine.
+        </div>
+        <button class="pixel-button" id="kindnessButton">
+          another one, please ↗
+        </button>
+        <span class="kindness-count" id="kindnessCount">
+          tiny reminder no. 01
+        </span>
+      </div>
+    </section>
+
+
+<section class="music-section">
+  <div class="section-label">
+    <span>04 / a little soundtrack</span>
+    <span>♫</span>
+  </div>
+
+  <div class="cassette-player">
+    <div class="player-top">
+      <span>✳ ABDULLAH'S LITTLE RADIO</span>
+      <span>STEREO · 001</span>
+    </div>
+
+    <div class="player-body">
+      <div class="vinyl-area">
+        <div class="vinyl" id="vinyl">
+          <div class="vinyl-label">♡</div>
+        </div>
+        <div class="vinyl-arm"></div>
+      </div>
+
+      <div class="track-info">
+        <span class="now-playing">♫ A PLAYLIST FOR YOU</span>
+        <h3>the soft hours</h3>
+        <p>for when the world gets a little too loud.</p>
+
+        <div class="equalizer" id="equalizer">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+          <span></span>
+        </div>
+
+        <a
+          class="spotify-button"
+          href="https://open.spotify.com/playlist/41ipOB36U3Dflejzww8XoE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ▶ listen on spotify ↗
+        </a>
+      </div>
+    </div>
+
+    <div class="player-bottom">
+      <span>MADE WITH LOVE ♡</span>
+      <span>TAKE YOUR TIME · NO RUSH</span>
+    </div>
+  </div>
+
+  <p class="music-note">
+    a few songs to keep you company. you don't have to
+    do anything right now.
+  </p>
+</section>
+
+
+    <footer>
+      <div class="footer-stars">✦ &nbsp; ✿ &nbsp; ✦</div>
+      <span>made with care, specifically for abdullah · 2026</span>
+    </footer>
+  </main>
+</body>
+</html>
